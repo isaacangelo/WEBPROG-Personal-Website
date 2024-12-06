@@ -1,7 +1,7 @@
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    background-color: DodgerBlue;
+    background-color: rgba(232, 59, 171, 0.893);
   }
    
   .flex-container > div {
