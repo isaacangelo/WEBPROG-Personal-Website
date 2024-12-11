@@ -15,6 +15,7 @@
             background-color: #f0f0f0;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         
         main {
@@ -32,7 +33,7 @@
         }
 
         .main-content > div {
-            background-color: #f1f1f1;
+            background-color: #f9f9f9;
             width: calc(33% - 20px);
             height: auto;
             min-height: 150px;
@@ -41,18 +42,22 @@
             font-size: 18px;
             border: 1px solid #ddd;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
         .main-content img {
             max-width: 100%;
             height: auto;
             margin: 10px 0;
+            border-radius: 50%;
+            border: 2px solid #ddd;
         }
 
         .sidebar {
             flex: 1;
             background-color: #f5f5f5;
             padding: 20px;
+            box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
         }
 
         table {
@@ -64,6 +69,8 @@
         table img {
             width: 100%;
             height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         table th {
@@ -95,7 +102,7 @@
         <section class="main-content">
             <div>
                 <h2>ABOUT ME</h2>
-                <img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/275339138_4891738160908762_559893741243629535_n.jpg" alt="Profile Picture" width="250" height="250">
+                <img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/275339138_4891738160908762_559893741243629535_n.jpg" alt="Profile Picture">
                 <p>Name: Isaac Angelo D. Estabillo</p>
                 <p>Nickname: Icy</p>
             </div>
@@ -134,23 +141,20 @@
                 <h3>Picture Gallery</h3>
                 <table>
                     <tr>
-                        <th><img src="https://cdn.discordapp.com/attachments/893247075305816116/1311711425152155669/d05d9b10-c5c7-4b7d-b833-f799fa3231e4.png" alt="Gallery Image 1"></th>
-                        <th><img src="https://cdn.discordapp.com/attachments/893247075305816116/1311711812038692915/01dee019-4b95-406e-a4a2-432dd8669054.png" alt="Gallery Image 2"></th>
-                        <th><img src="https://cdn.discordapp.com/attachments/893247075305816116/1311712088720281691/Z.png" alt="Gallery Image 3"></th>
-                        <th><img src="https://cdn.discordapp.com/attachments/893247075305816116/1311710226839244881/image.png" alt="Gallery Image 4"></th>
+                        <th><img src="https://media.discordapp.net/attachments/893247075305816116/1311710226839244881/image.png?ex=675afc58&is=6759aad8&hm=29f99fc5ade0b3df76d9ba3eb9d83d3ff490c180ea769be11e841325270e7434&=&format=webp&quality=lossless&width=825&height=448" alt="Gallery Image 1"></th>
+                        <th><img src="https://media.discordapp.net/attachments/893247075305816116/1311711425152155669/d05d9b10-c5c7-4b7d-b833-f799fa3231e4.png?ex=675afd76&is=6759abf6&hm=95d68ce9f531a213b0ff1409cf6e3fa0cc738bb5fc1a36651da2b042c4ea8710&=&format=webp&quality=lossless&width=672&height=897" alt="Gallery Image 2"></th>
+                        <th><img src="https://media.discordapp.net/attachments/893247075305816116/1311711812038692915/01dee019-4b95-406e-a4a2-432dd8669054.png?ex=675afdd2&is=6759ac52&hm=f0914a4f53c9bec397120d796e1ea147cf9cc3622446dbb3dccd5babaccffc07&=&format=webp&quality=lossless&width=672&height=897" alt="Gallery Image 3"></th>
+                        <th><img src="https://media.discordapp.net/attachments/893247075305816116/1311712088720281691/Z.png?ex=675afe14&is=6759ac94&hm=f51de7628aa90180e412f3b29ec5158a5777808342d59ac5c03364838bdd66a6&=&format=webp&quality=lossless&width=672&height=897" alt="Gallery Image 4"></th>
                     </tr>
                 </table>
                 <table>
                     <tr>
-                        <th><img src="https://cdn.discordapp.com/attachments/893247075305816116/1311712753433706519/Z.png" alt="Gallery Image 5"></th>
-                        <th><img src="https://cdn.discordapp.com/attachments/893247075305816116/1311712777621995540/9k.png" alt="Gallery Image 6"></th>
+                        <th><img src="https://cdn.discordapp.com/attachments/893247075305816116/1311712753433706519/Z.png?ex=675afeb2&is=6759ad32&hm=68febc5b5a55621b2399b9c9b150f7d07f93fd6cffe16592f790f1ab28265cba&" alt="Gallery Image 5"></th>
+                        <th><img src="https://cdn.discordapp.com/attachments/893247075305816116/1311712777621995540/9k.png?ex=675afeb8&is=6759ad38&hm=1b97ba99e0700b3e95c496057bcef01326130d52043104f70313ad0574546ab9&" alt="Gallery Image 6"></th>
                     </tr>
                 </table>
             </div>
         </section>
-        <aside class="sidebar">
-            <p>Additional Content or Links</p>
-        </aside>
     </main>
     <footer>
         Asia Pacific College
