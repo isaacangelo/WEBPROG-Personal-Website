@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox and Grid</title>
+    <title>Customized Personal Website</title>
     <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
         .container {
             display: grid;
             grid-template-rows: auto 1fr auto;
@@ -12,7 +19,8 @@
         }
         
         header, footer {
-            background-color: #f0f0f0;
+            background-color: #3b5998; /* Vibrant Blue */
+            color: #fff;
             padding: 20px;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -25,24 +33,30 @@
         
         .main-content {
             flex: 2;
-            background-color: #fff;
+            background-color: #ffffff; /* White for clean content */
             padding: 20px;
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 15px;
+            border-right: 1px solid #ddd;
         }
 
         .main-content > div {
-            background-color: #f9f9f9;
+            background-color: #f9fafb; /* Light Gray */
             width: calc(33% - 20px);
-            height: auto;
             min-height: 150px;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
             font-size: 18px;
-            border: 1px solid #ddd;
+            border: 1px solid #e5e7eb;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .main-content > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .main-content img {
@@ -50,12 +64,12 @@
             height: auto;
             margin: 10px 0;
             border-radius: 50%;
-            border: 2px solid #ddd;
+            border: 3px solid #3b5998;
         }
 
         .sidebar {
             flex: 1;
-            background-color: #f5f5f5;
+            background-color: #edf2f7; /* Soft Blue */
             padding: 20px;
             box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
         }
@@ -84,11 +98,16 @@
 
         h1, h2, h3 {
             margin: 10px 0;
-            color: #333;
+            color: #3b5998; /* Match header/footer color */
         }
 
         p {
             margin: 5px 0;
+        }
+
+        footer {
+            font-size: 14px;
+            border-top: 1px solid #ddd;
         }
     </style>
 </head>
@@ -96,7 +115,7 @@
 
 <div class="container">
     <header>
-        <h1>Personal Profile Web Page</h1>
+        <h1>Isaac Angelo D. Estabillo</h1>
     </header>
     <main>
         <section class="main-content">
@@ -134,32 +153,21 @@
             <div>
                 <h3>Goals in life/Dream</h3>
                 <ul>
-                    <li>My simple goal in life is to be successful in the future while being happy and contented.</li>
+                    <li>To be successful in the future while being happy and contented.</li>
                 </ul>
             </div>
             <div>
                 <h3>Picture Gallery</h3>
                 <table>
                     <tr>
-                        <th><img src="https://media.discordapp.net/attachments/893247075305816116/1311710226839244881/image.png?ex=675afc58&is=6759aad8&hm=29f99fc5ade0b3df76d9ba3eb9d83d3ff490c180ea769be11e841325270e7434&=&format=webp&quality=lossless&width=825&height=448" alt="Gallery Image 1"></th>
-                        <th><img src="https://media.discordapp.net/attachments/893247075305816116/1311711425152155669/d05d9b10-c5c7-4b7d-b833-f799fa3231e4.png?ex=675afd76&is=6759abf6&hm=95d68ce9f531a213b0ff1409cf6e3fa0cc738bb5fc1a36651da2b042c4ea8710&=&format=webp&quality=lossless&width=672&height=897" alt="Gallery Image 2"></th>
-                        <th><img src="https://media.discordapp.net/attachments/893247075305816116/1311711812038692915/01dee019-4b95-406e-a4a2-432dd8669054.png?ex=675afdd2&is=6759ac52&hm=f0914a4f53c9bec397120d796e1ea147cf9cc3622446dbb3dccd5babaccffc07&=&format=webp&quality=lossless&width=672&height=897" alt="Gallery Image 3"></th>
-                        <th><img src="https://media.discordapp.net/attachments/893247075305816116/1311712088720281691/Z.png?ex=675afe14&is=6759ac94&hm=f51de7628aa90180e412f3b29ec5158a5777808342d59ac5c03364838bdd66a6&=&format=webp&quality=lossless&width=672&height=897" alt="Gallery Image 4"></th>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <th><img src="https://cdn.discordapp.com/attachments/893247075305816116/1311712753433706519/Z.png?ex=675afeb2&is=6759ad32&hm=68febc5b5a55621b2399b9c9b150f7d07f93fd6cffe16592f790f1ab28265cba&" alt="Gallery Image 5"></th>
-                        <th><img src="https://cdn.discordapp.com/attachments/893247075305816116/1311712777621995540/9k.png?ex=675afeb8&is=6759ad38&hm=1b97ba99e0700b3e95c496057bcef01326130d52043104f70313ad0574546ab9&" alt="Gallery Image 6"></th>
+                        <th><img src="https://media.discordapp.net/attachments/893247075305816116/1311710226839244881/image.png?format=webp&quality=lossless" alt="Gallery Image 1"></th>
+                        <th><img src="https://media.discordapp.net/attachments/893247075305816116/1311711425152155669/d05d9b10-c5c7-4b7d-b833-f799fa3231e4.png?format=webp&quality=lossless" alt="Gallery Image 2"></th>
+                        <th><img src="https://media.discordapp.net/attachments/893247075305816116/1311711812038692915/01dee019-4b95-406e-a4a2-432dd8669054.png?format=webp&quality=lossless" alt="Gallery Image 3"></th>
+                        <th><img src="https://media.discordapp.net/attachments/893247075305816116/1311712088720281691/Z.png?format=webp&quality=lossless" alt="Gallery Image 4"></th>
                     </tr>
                 </table>
             </div>
         </section>
     </main>
     <footer>
-        Asia Pacific College
-    </footer>
-</div>
-
-</body>
-</html>
+        &copy; 2024 -
