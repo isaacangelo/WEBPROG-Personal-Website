@@ -1,63 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="css/grid.css?version=0.1">
-<title>Grid.css</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Angelo De Guzman Estabillo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<hr>
-
-<div class="grid-container">
-    <div class="item1">
-        <h1>Personal Profile Web Page</h1>
-    </div>
-    <div class="item2">
-        <h2>ABOUT ME</h2>
-<img src="https://scontent.fmnl4-1.fna.fbcdn.net/v/t39.30808-6/275339138_4891738160908762_559893741243629535_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=hsztydUl074Q7kNvgEZUZLZ&_nc_zt=23&_nc_ht=scontent.fmnl4-1.fna&_nc_gid=Aiqa0m-2z2AjYGids_5QIyH&oh=00_AYCmZqajIegzdk9iPEiH_yi1G2vyWHb-r71Bo_aNb7D4JA&oe=674E5FAD" width="250" height="250">
-
-<p>Name: Isaac Angelo D. Estabillo</p>
-
-<p>Nickname: Icy</p>
-
-<h3>Education/Achievements</h3>
-<li>Rizal Technological University - JHS</li>
-<li>Asia Pacific College - SHS</li>
-<li>Asia Pacific College - College (current)</li>
-
-<li>Graduated SHS with High Honors</li>
-
-<h3>IT Experience</h3>
-<li>Basics of Python and Java</li>
-    </div>
-    <div class="item3">
-        <h3>Hobbies and Interests</h3>
-<li>Basketball</li>
-<li>Volleyball</li>
-<li>Table Tennis</li>
-<li>Biking</li>
-<li>Binge watching series</li>
-    </div>  
-    <div class="item4">
-        <h3>Goals in life/Dream</h3>
-<li>My simply goal in life is to be successful in the future while being happy and contented.</li>
-    </div>
-    <div class="item5">
-        <h3>Picture Gallery</h3>
-<table>
-<tr>
-<th><img src="https://cdn.discordapp.com/attachments/893247075305816116/1311711425152155669/d05d9b10-c5c7-4b7d-b833-f799fa3231e4.png?ex=6749d9f6&is=67488876&hm=78b996b7ad0cb49be1ab039b9ee67c0dd21fc8bdd8bbfafb4d652030b6f794fb&"  width="150" height="200"></th>
-<th><img src="https://cdn.discordapp.com/attachments/893247075305816116/1311711812038692915/01dee019-4b95-406e-a4a2-432dd8669054.png?ex=6749da52&is=674888d2&hm=31a48c540c30b9da0e4adbdc5de8a118062552d5f6f7e4a2c03e953af84238c1&"  width="150" height="200"></th>
-<th><img src="https://cdn.discordapp.com/attachments/893247075305816116/1311712088720281691/Z.png?ex=6749da94&is=67488914&hm=5d1ee3f28b09259b935f689a042f01f2ff2803ed93b6355b92806c8034d23139&"  width="150" height="200"></th>
-<th><img src="https://cdn.discordapp.com/attachments/893247075305816116/1311710226839244881/image.png?ex=6749d8d8&is=67488758&hm=f6191122a5a82269ba49633983e6b7bf354ef51de34a4ed1b68512b8381a1284&"  width="250" height="150"></th>
-</tr>
-</table>
-<table>
-<th><img src="https://cdn.discordapp.com/attachments/893247075305816116/1311712753433706519/Z.png?ex=6749db32&is=674889b2&hm=14a8aee4851b416909d7e922726f38e45167dffc81937f7509f399058ea31d6a&"  width="150" height="200"></th>
-<th><img src="https://cdn.discordapp.com/attachments/893247075305816116/1311712777621995540/9k.png?ex=6749db38&is=674889b8&hm=9af0ad4309ac9b5e06403199bce849a0627e071cb992dbdd17f3e199d63a274b&"  width="350" height="250"></th>
-</table>
-    </div>
-  </div>
-
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" data-section="home" class="nav-link home-link"><i class="fas fa-home"></i> <span class="nav-text">Home</span></a></li>
+                <li class="right-links">
+                    <a href="#" data-section="about" class="nav-link"><span class="nav-text">About</span></a>
+                    <a href="#" data-section="education" class="nav-link"><span class="nav-text">Education</span></a>
+                    <a href="#" data-section="achievements" class="nav-link"><span class="nav-text">Achievements</span></a>
+                    <a href="#" data-section="it-experience" class="nav-link"><span class="nav-text">IT Experience</span></a>
+                    <a href="#" data-section="hobbies" class="nav-link"><span class="nav-text">Hobbies</span></a>
+                    <a href="#" data-section="goals" class="nav-link"><span class="nav-text">Goals</span></a>
+                    <a href="#" data-section="gallery" class="nav-link"><span class="nav-text">Gallery</span></a>
+                    <a href="#" data-section="feedback" class="nav-link"><span class="nav-text">Feedback</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="progress-bar" id="progress-bar"></div>
+    <main>
+        <div id="content-container" class="content-container">
+            <section id="home" class="content active">
+                <h2>Welcome!</h2>
+                <p>Explore my journey, achievements, and aspirations.</p>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/isaac-estabillo-350a67218/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/_aesac/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </section>
+            <section id="about" class="content">
+                <h2>About</h2>
+                <p>Hello! I am Isaac Angelo De Guzman Estabillo and I am a second year student who aims to graduate BSIT to be able to achieve my dreams. Studying Information Technology wasn't my first choice but I believe that this path that I took is the one closest to achieving my dreams which is to be successful and contented in life.</p>
+            </section>
+            <section id="education" class="content">
+                <h2>Education</h2>
+                <div class="education-grid">
+                    <div class="education-item">
+                        <h3>Rizal Technological University</h3>
+                        <p>Junior High School</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Asia Pacific College</h3>
+                        <p>Senior High School</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Asia Pacific College</h3>
+                        <p>2nd Year College</p>
+                    </div>
+                </div>
+            </section>
+            <section id="achievements" class="content">
+                <h2>Achievements</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-item">
+                        <p>Graduated Senior High School with High Honors</p>
+                    </div>
+                </div>
+            </section>
+            <section id="it-experience" class="content">
+                <h2>IT Experience</h2>
+                <div class="it-experience-grid">
+                    <div class="it-experience-item">
+                        <p>Basics of Python, Java, and HTML</p>
+                    </div>
+                </div>
+            </section>
+            <section id="hobbies" class="content">
+                <h2>Hobbies</h2>
+                <div class="hobbies-grid">
+                    <div class="hobby-item"><i class="fas fa-basketball-ball"></i> Basketball</div>
+                    <div class="hobby-item"><i class="fas fa-volleyball-ball"></i> Volleyball</div>
+                    <div class="hobby-item"><i class="fas fa-table-tennis"></i> Table Tennis</div>
+                    <div class="hobby-item"><i class="fas fa-biking"></i> Biking</div>
+                </div>
+            </section>
+            <section id="goals" class="content">
+                <h2>Goals</h2>
+                <p>My simple goal in life is to be successful in the future while being happy and content. I aim to achieve this by working hard and staying focused on my dreams. Along the way, I also hope to inspire others to pursue their own goals with passion and determination.</p>
+            </section>
+            <section id="gallery" class="content">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="https://media.discordapp.net/attachments/893247075305816116/1311710226839244881/image.png?ex=678920d8&is=6787cf58&hm=571d86db90297f912184afc886d2484fbcf7df308ba79827472e734dfeb1719c&=&format=webp&quality=lossless&width=978&height=532" alt="Image 1"></div>
+                    <div class="gallery-item"><img src="https://media.discordapp.net/attachments/893247075305816116/1311712753433706519/Z.png?ex=67892332&is=6787d1b2&hm=db9ca4d89464187023e4f011e4cafe551bd5e32fecb851c49051ff0333ac0c6e&=&format=webp&quality=lossless&width=672&height=897" alt="Image 2"></div>
+                    <div class="gallery-item"><img src="https://media.discordapp.net/attachments/893247075305816116/1298080790340440084/image.jpg?ex=6788fbb1&is=6787aa31&hm=25fd2d9cb36b5ad172e7db8c1e9411798c841997f8ec7c3b74bbd69d1e8058df&=&format=webp&width=672&height=897" alt="Image 3"></div>
+                    <div class="gallery-item"><img src="https://media.discordapp.net/attachments/893247075305816116/1145794800793170020/estabillo_-_scrapbook.png?ex=6788ae50&is=67875cd0&hm=f85ea2dc740f9925f4445968851f64cf30facc3d6cf809b6d1dd2d167974f6a7&=&format=webp&quality=lossless&width=634&height=897" alt="Image 4"></div>
+                    <div class="gallery-item"><img src="https://media.discordapp.net/attachments/893247075305816116/1311712088720281691/Z.png?ex=67892294&is=6787d114&hm=6e0af9dbc59bd7669250341619fdd0ac2085bd5e7c03b9d6ddd2cc8a78687e72&=&format=webp&quality=lossless&width=672&height=897" alt="Image 5"></div>
+                </div>
+            </section>
+            <section id="feedback" class="content">
+                <h2>Feedback</h2>
+                <form id="feedback-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="rating">Rate the website:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="">Select...</option>
+                        <option value="1">1 - Very Poor</option>
+                        <option value="2">2 - Poor</option>
+                        <option value="3">3 - Average</option>
+                        <option value="4">4 - Good</option>
+                        <option value="5">5 - Excellent</option>
+                    </select>
+                    <br><br>
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                    <br><br>
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
